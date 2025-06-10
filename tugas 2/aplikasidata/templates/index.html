@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <h1>Data Analysis Result</h1>
+    <ul>
+        <li>Average Age: {{ avg_age }}</li>
+        <li>Average Score: {{ avg_score }}</li>
+        <li>Max Score: {{ max_score }}</li>
+        <li>Min Score: {{ min_score }}</li>
+    </ul>
+    <h2>Data Table</h2>
+    {{ data | safe }}
+</body>
+</html>
